@@ -8,7 +8,7 @@ last_updated: 2026-05-04
 
 # Cold Email Copywriting Skill
 
-A battle-tested methodology for cold email that ships replies, not opens. Built from 122+ real B2B SaaS campaigns. Every output produced under this skill must follow the hard rules below.
+A battle-tested methodology for cold email that ships replies, not opens. Built from [N]+ real B2B SaaS campaigns. Every output produced under this skill must follow the hard rules below.
 
 This is an open-source release of a working production skill. Customize the sender identity in the next section, then the methodology applies as-is.
 
@@ -20,16 +20,16 @@ Before using this skill, fill in your own sender profile below. Every template, 
 
 ```
 Your name:                 [Your Name]
-Your role positioning:     [e.g., go to market engineer / fractional CMO / RevOps consultant]
+Your role positioning:     [e.g., [your role] / fractional CMO / RevOps consultant]
 Your core expertise:       [e.g., HubSpot + Apollo / Clay + n8n / Salesforce + Outreach]
 Your engagement model:     [e.g., contract / agency / freelance / full-time]
 Your social proof number:  [e.g., 50+ clients / 30+ B2B SaaS teams / 10 years in market]
 Your brand name:           [e.g., Acme]
 Your website:              [e.g., acme.com]
-Your location positioning: [e.g., from India / based in Austin / EU-based, optional]
+Your location positioning: [e.g., [from your location, optional] / based in Austin / EU-based, optional]
 ```
 
-Throughout this skill, references to "the sender" / "the operator" / "you" mean whoever fills in this profile. Examples and templates use the original author's profile (Kaushik Kulkarni, go to market engineer, 122+ clients, brand "Up", India-based) as illustrative reference. Swap these values for yours when generating your own copy.
+Throughout this skill, references to "the sender" / "the operator" / "you" mean whoever fills in this profile. Templates and examples use placeholder syntax like `[your role]`, `[N]+ clients`, `[your brand]`, `[your-website.com]`. Replace those with your own values before sending. The methodology is industry-agnostic: it works whether you sell GTM services, accounting software, fractional CFO time, design retainers, or anything else B2B.
 
 ---
 
@@ -98,7 +98,7 @@ Line 2 - Personalization (variable slot, bespoke per prospect):
   ONE observation about the prospect or company, drawn from research. Something your service / skillset resonates with. Singular, clean. Do not cram multiple observations.
 
 Line 3 - Bridge + Identity:
-  Structured as: "given [the thing you observed], are you looking for a go to market engineer by any chance? I've worked with 122+ [companies/SaaS teams/similar companies]."
+  Structured as: "given [the thing you observed], are you looking for a [your role] by any chance? I've worked with [N]+ [companies/SaaS teams/similar companies]."
   The bridge connects the observation to your offer. The identity line states who he is and the client count.
 
 Line 4 - CTA:
@@ -109,7 +109,7 @@ Line 4 - CTA:
 
 - **Line 1:** Greeting format is fixed to `Good {{sl_time_of_day}} {{first_name}},`. Minor spintax allowed only if it preserves the exact phrase "good {{sl_time_of_day}}" (e.g., `{Good|Gooood}` is ok). Banned forms in Rule 1 below.
 - **Line 2:** Fully variable. This is where research lands. Drawn from LinkedIn posts, website, tech stack, company news, funding, etc. ONE clean observation, not a cram of three.
-- **Line 3:** Default form: `Are you looking for a go to market engineer by any chance?` followed by the identity + client count sentence. The optional multi-role slashed spintax (`{go to market engineer/clay expert/n8n expert|clay expert/go to market engineer/n8n expert}`) exists in the proven Template #1 but is OPTIONAL. The default is just "go to market engineer" (field correction v0.14).
+- **Line 3:** Default form: `Are you looking for a [your role] by any chance?` followed by the identity + client count sentence. The optional multi-role slashed spintax (`{your role labels|your role labels (rotated)}`) exists in the proven Template #1 but is OPTIONAL. The default is just "[your role]" (field correction v0.14).
 - **Line 4:** Locked to the "Would a meeting work this week?" family. Spintax only on punctuation (`?` vs `??`).
 
 ### Line 2 Personalization - Angle Examples That Work
@@ -154,7 +154,7 @@ Line 2: [observation about company]. [Category] SaaS usually needs outbound that
 ```
 Line 2: [observation about company].
 
-Are you looking for a go to market engineer by any chance? I've helped 122+ teams at this stage.
+Are you looking for a [your role] by any chance? I've helped [N]+ teams at this stage.
 ```
 
 That's it. ONE observation, then the ask. The reader understands what was researched. They don't need our interpretation of what that means for their outbound - that's exactly what the meeting is for.
@@ -184,9 +184,9 @@ Do NOT name specific tools in Line 2 or elsewhere in the body:
 - ❌ "My stack is Clay + n8n + Smartlead..."
 - ❌ "built with Clay enrichment..."
 
-Field-tested rule: "never specifically say self hosted n8n and clay etc. saying go to market engineer should be fine."
+Field-tested rule: "never specifically say self hosted n8n and clay etc. saying [your role] should be fine."
 
-The positioning word is "go to market engineer". The stack is implied by the outcomes, not name-dropped.
+The positioning word is "[your role]". The stack is implied by the outcomes, not name-dropped.
 
 ### The 5 Angle Categories (Locked, v0.16)
 
@@ -227,8 +227,8 @@ Would a meeting work this week?
 ```
 
 Notes:
-- The "Are you looking for a go to market engineer by any chance?" line is NOT in this angle. The offer is baked into "I've compiled a list...".
-- The co-founder mention (`I wanted to forward this note from my co founder`) and the entire forwarded block (Ashley) are REMOVED per field correction: "maybe without the cofounder mention".
+- The "Are you looking for a [your role] by any chance?" line is NOT in this angle. The offer is baked into "I've compiled a list...".
+- The co-founder mention (`I wanted to forward this note from my co founder`) and the entire forwarded block (the co-founder persona) are REMOVED per field correction: "maybe without the cofounder mention".
 - Word limits do NOT apply to Angle 4. Field-tested rule: "its okay if your copy doesn't fall under the word limits".
 - For Persona 2 (end-company SaaS) prospects, reword "work for" to something natural like "using in production" to avoid the awkward phrasing AND the CTA-word conflict with "work" in the locked CTA.
 - Locked CTA rule still applies: use "Would a meeting work this week?" (the original Template #2 said "Interested in a chat this week?" - we override to the locked family).
@@ -262,15 +262,15 @@ When you request emails for a prospect, deliver 5 emails labeled by angle (not A
 
 The identity sentence in Line 3 states who you are + your social proof number. Approved patterns:
 
-- `I've worked with 122+ SaaS teams...`
-- `I've helped 122+ companies...`
-- `I've helped 122+ teams at this exact stage.`
-- `I've helped 122+ teams with this exact shape.`
+- `I've worked with [N]+ teams in your ICP...`
+- `I've helped [N]+ companies...`
+- `I've helped [N]+ teams at this exact stage.`
+- `I've helped [N]+ teams with this exact shape.`
 
 Optionally include a company-name tie-in:
 - `...and was keen on seeing how I could help {{company_name}}.` (borrowed from Template #1)
 
-Do not elaborate further on stack or methodology. The positioning is "go to market engineer who has worked with 122+ SaaS teams". That is enough.
+Do not elaborate further on stack or methodology. The positioning is "[your role] who has worked with [N]+ teams in your ICP". That is enough.
 
 ### Why this structure
 
@@ -302,31 +302,31 @@ When you ask this skill to write copy, it produces the copy and stops. It does n
 Every email produced by this skill is sent from your own identity. The copy must align with this positioning. The fields below mirror the values from "Customize This Skill For You" at the top.
 
 **Your sender profile (fill these in):**
-- **Role:** [your role positioning, e.g., go to market engineer]
+- **Role:** [your role positioning, e.g., [your role]]
 - **Core expertise:** [the 1-2 tools or domains you go deep on]
 - **Engagement model:** [contract / agency / freelance / full-time]
 - **Track record:** [your social proof number, e.g., 50+ clients]
 - **Brand name:** [your brand]
 - **Website:** [your website]
-- **Location positioning (optional):** [e.g., from India, from Austin, EU-based]
+- **Location positioning (optional):** [e.g., [from your location, optional], from Austin, EU-based]
 
 **Positioning phrase used in emails (example pattern):** "contract-based [primary role] / [skill 1] expert / [skill 2] expert [from location]". The proven template rotates which of the roles appears first (see Proven Template below) as a reorder trick while keeping all visible.
 
 **Never mis-describe yourself as:**
 - A category you don't actually belong to (e.g., calling yourself an agency when you're solo).
-- A role you're not (a freelance marketer when you're specifically a GTM engineer, etc.).
+- A role you're not (e.g., calling yourself a freelance marketer when you're specifically a designer, or vice versa).
 - A model you don't operate under (full-time when you're contract only).
-- A geography that isn't yours (US-based when you're India-based, etc.).
+- A geography that isn't yours (US-based when you're [your-location]-based, etc.).
 
 These mis-descriptions destroy positioning credibility. Pick the truth and stick to it.
 
 **Original author's profile (used in examples and templates throughout this skill):**
-- Role: go to market engineer
-- Core expertise: Clay.com and n8n.io (self-hosted)
-- Engagement model: contract-based, serves globally from India
-- Track record: 122+ clients
-- Brand: Up
-- Website: up.one
+- Role: [your role]
+- Core expertise: [your core tools or domains]
+- Engagement model: [your engagement model, e.g. "contract-based, serves globally from London"]
+- Track record: [N]+ clients
+- Brand: [your brand]
+- Website: [your-website.com]
 
 When generating your own emails, swap these example values for yours.
 
@@ -361,7 +361,7 @@ These are companies that serve OTHER companies. Often the work is on their end-c
 - Sub-categories: GTM agencies, cold email agencies, RevOps agencies, lead-gen agencies, fractional-CMO shops.
 
 **What they usually buy:**
-- Contract GTM engineer to execute for their clients (white-label or co-branded).
+- Contract specialist (in your discipline) to execute for their clients (white-label or co-branded).
 - Clay or n8n specialist to build systems they don't have in-house.
 - Outbound strategist to fix their own pipeline.
 
@@ -376,7 +376,7 @@ These are companies that sell a product or service directly to end users or busi
 - Team of product/engineering/sales people, not consultants.
 
 **What they usually buy:**
-- Contract GTM engineer to build their own outbound pipeline.
+- Contract specialist (in your discipline) to build their own [thing you build].
 - Clay + n8n expert to run their enrichment and automation.
 - Fractional GTM ops help.
 
@@ -530,7 +530,7 @@ This is the most under-priced research technique in the whole skill. It requires
 - Knowing the prospect's tech stack surfaces concrete personalization angles ("Saw you're on HubSpot + Outreach, so I'd bet your routing latency between them is 10+ min").
 - Tech stack signals persona depth (a company with Salesforce + Outreach + Gong + Clari is a different buyer than one on HubSpot + Google Sheets).
 - SPF/DMARC records reveal deliverability maturity, a direct wedge for your positioning.
-- Funding-stage signals from Crunchbase via the LinkedIn API become MORE useful when paired with tech-stack signals ("Series B + no outbound tools yet" = high-intent prospect for a GTM engineer).
+- Funding-stage signals from Crunchbase via the LinkedIn API become MORE useful when paired with tech-stack signals ("Series B + no outbound tools yet" = high-intent prospect for a GTM-services seller).
 
 ---
 
@@ -810,7 +810,7 @@ Examples:
 | `OpenAI` (already clean) | `OpenAI` |
 | `gtm.inc` | `GTM Inc` (judgment call; `Inc` is part of brand here) |
 
-The domain itself (`recall.ai`) is only used in places where a URL is required (like the `up.one` website reference). It is never used as the brand name in email prose.
+The domain itself (`recall.ai`) is only used in places where a URL is required (a website link, signature, etc). It is never used as the brand name in email prose.
 
 ### Why this matters
 
@@ -1118,7 +1118,7 @@ Every sentence describing you or your work must start with "I" + verb. NO relati
 
 ### Banned constructions
 
-- ❌ "I'm a go to market engineer **who builds** outbound systems..."
+- ❌ "I'm a [your role] **who builds** outbound systems..."
 - ❌ "I'm a contract operator **doing** GTM for SaaS..."
 - ❌ "I'm someone **building** outbound layers..."
 
@@ -1126,8 +1126,8 @@ The "who" or participle attached to "engineer/operator/someone" makes the brain 
 
 ### Required form
 
-- ✅ "I'm a go to market engineer." + "I build outbound systems..."
-- ✅ "I'm a go to market engineer, and I build outbound systems..." (conjunction-joined, both halves first-person)
+- ✅ "I'm a [your role]." + "I build outbound systems..."
+- ✅ "I'm a [your role], and I build outbound systems..." (conjunction-joined, both halves first-person)
 
 Two consecutive sentences each starting with "I" reads as direct first-person. A relative clause does not.
 
@@ -1170,7 +1170,7 @@ Good {{sl_time_of_day}} {{first_name}},
 
 I noticed [tailored observation].
 
-I'm a go to market engineer, and I've built [tailored layer] at 122+ [tailored type].
+I'm a [your role], and I've built [tailored layer] at [N]+ [tailored type].
 
 I would love to see how I could help {{company_name}}.
 
@@ -1207,7 +1207,7 @@ The Company Name field can be self-reported (LinkedIn current-role, Slack profil
 |---|---|---|
 | "Amanda Jean Growth Marketing" / nintex.com | Nintex (workflow automation) | Amanda is a solo consultant, but the email goes to her Nintex address - Nintex is the relevant entity |
 | "rehook.ai" / clevertap.com | CleverTap (mobile engagement) | Domain wins; rehook.ai may be a side project or older role |
-| "Powered by Search" with name "dev" | Domain holder, but check name normalization | "dev basu" (Indian) showed up via LinkedIn |
+| "Powered by Search" with name "dev" | Domain holder, but check name normalization | The lead row had a truncated first name; the actual full name surfaced via LinkedIn |
 
 ---
 
@@ -1275,7 +1275,7 @@ Field-tested correction: "i dont want linkedin post personalization anywhere i t
 ### Why
 
 - Prospects can tell when an email is built off LinkedIn data. It feels invasive and triggers reply-rate collapse.
-- your positioning is "GTM engineer who builds revenue infra at 122+ companies", not "I scraped your profile". Showing your hand kills the peer-to-peer tone.
+- your positioning is your sender profile (your role, your social proof number, the layer you build), not "I scraped your profile". Showing your hand kills the peer-to-peer tone.
 - Personalization quality comes from company-level signal (press, fundraises, product launches), not from prospect-level career trivia.
 
 ### Banned phrasings (anywhere in the email)
@@ -1321,7 +1321,7 @@ Before shipping any observation that uses "you" or "your":
 
 ## Rule 2l: TYPE Slot Must Be a Complete Noun Phrase (v0.25)
 
-Field-tested correction: "wtf is just '122+ b2b saas' it should be 122+ b2b saas companies. applies everywhere think properly".
+Field-tested correction: "wtf is just '[N]+ b2b saas' it should be [N]+ b2b saas companies. applies everywhere think properly".
 
 ### The rule
 
@@ -1329,23 +1329,23 @@ When the TYPE slot uses adjective-only forms like "SaaS", "B2B", "AI-native", or
 
 ### Banned (incomplete noun phrases)
 
-- ❌ "122+ B2B SaaS"
-- ❌ "122+ AI-native SaaS"
-- ❌ "122+ PLG SaaS"
-- ❌ "122+ vertical SaaS"
-- ❌ "122+ data-tier SaaS"
-- ❌ "122+ enterprise B2B"
+- ❌ "[N]+ B2B SaaS"
+- ❌ "[N]+ AI-native SaaS"
+- ❌ "[N]+ PLG SaaS"
+- ❌ "[N]+ vertical SaaS"
+- ❌ "[N]+ data-tier SaaS"
+- ❌ "[N]+ enterprise B2B"
 
 These read as fragments because "SaaS"/"B2B" are adjectives without a head noun.
 
 ### Required (complete noun phrases)
 
-- ✅ "122+ B2B SaaS companies"
-- ✅ "122+ AI-native SaaS companies"
-- ✅ "122+ PLG SaaS companies"
-- ✅ "122+ vertical SaaS companies"
-- ✅ "122+ data-tier SaaS companies"
-- ✅ "122+ enterprise B2B teams"
+- ✅ "[N]+ companies in your ICP"
+- ✅ "[N]+ companies in your ICP"
+- ✅ "[N]+ companies in your ICP"
+- ✅ "[N]+ companies in your ICP"
+- ✅ "[N]+ companies in your ICP"
+- ✅ "[N]+ teams in your ICP"
 
 ### Acceptable nouns to attach
 
@@ -1368,7 +1368,7 @@ Field-tested correction: "lines after the first line are still the same for all 
 
 ### The rule
 
-The "I've built [LAYER] at 122+ [TYPE]" sentence has TWO variable slots, both of which must be tailored per prospect's specific motion. NOT the same string across emails.
+The "I've built [LAYER] at [N]+ [TYPE]" sentence has TWO variable slots, both of which must be tailored per prospect's specific motion. NOT the same string across emails.
 
 ### LAYER options (rotate per prospect)
 
@@ -1398,7 +1398,7 @@ The "I've built [LAYER] at 122+ [TYPE]" sentence has TWO variable slots, both of
 
 ### Why two slots matter
 
-If only ONE of LAYER or TYPE varies, multiple prospects still feel similar. With both varied, every email has a unique "I've built X at 122+ Y" sentence even when the broader observation is short.
+If only ONE of LAYER or TYPE varies, multiple prospects still feel similar. With both varied, every email has a unique "I've built X at [N]+ Y" sentence even when the broader observation is short.
 
 ### Sample variations across prospects
 
@@ -1417,7 +1417,7 @@ Each pair is uniquely matched to that prospect's market and motion.
 
 ## Rule 2h: Compress Offer + Proof When Natural (v0.23)
 
-Field-tested correction: "I build the outbound layer for API-first SaaS, and I've done this with 122+ companies. so many words this could've just been 'I've built the outbound layer for 122+ api first companies'".
+Field-tested correction: "I build the outbound layer for API-first SaaS, and I've done this with [N]+ companies. so many words this could've just been 'I've built the outbound layer for [N]+ api first companies'".
 
 ### The rule
 
@@ -1426,14 +1426,14 @@ When the offer and proof can be combined into a single past-tense line with a co
 ### Pattern
 
 ❌ Two separate sentences:
-> "I build the outbound layer for API-first SaaS. I've done this with 122+ companies."
+> "I build the outbound layer for API-first SaaS. I've done this with [N]+ companies."
 
 This wastes a sentence saying "I've done this".
 
 ✅ One past-tense compressed line:
-> "I've built the outbound layer for 122+ API-first companies."
+> "I've built the outbound layer for [N]+ companies in your ICP."
 
-The past tense ("I've built") implies completed work AND volume in one phrase. The "122+" is the proof. The "API-first companies" is the scope.
+The past tense ("I've built") implies completed work AND volume in one phrase. The "[N]+" is the proof. The "API-first companies" is the scope.
 
 ### Word-count guideline
 
@@ -1451,7 +1451,7 @@ Field-tested correction: "dont promote me for just outbound, there's more to gtm
 
 ### The rule
 
-The offer phrase should describe GTM engineering broadly, NOT just outbound. Outbound is one piece of GTM (and a big one), but pitching the sender as an outbound operator alone reduces him to an SDR-for-hire. He builds the FULL revenue infrastructure.
+The offer phrase should describe what you do BROADLY, NOT just one slice. If your service has multiple components (e.g., outbound + automation + RevOps; or research + strategy + execution), pitching only one slice in the email reduces you in the buyers eyes to a single-skill freelancer. Use language that covers the full breadth.
 
 ### Banned offer framings
 
@@ -1463,11 +1463,11 @@ These collapse your role into one slice of GTM.
 
 ### Recommended broader framings
 
-- ✅ "I've built revenue infrastructure at 122+ API-first companies."
-- ✅ "I've engineered GTM systems at 122+ companies."
-- ✅ "I've built the growth layer at 122+ SaaS companies."
-- ✅ "I've shipped GTM stacks at 122+ companies."
-- ✅ "I've built outbound and automation systems at 122+ companies." (paired with another GTM area)
+- ✅ "I've built revenue infrastructure at [N]+ companies in your ICP."
+- ✅ "I've engineered GTM systems at [N]+ companies."
+- ✅ "I've built the growth layer at [N]+ SaaS companies."
+- ✅ "I've shipped GTM stacks at [N]+ companies."
+- ✅ "I've built outbound and automation systems at [N]+ companies." (paired with another GTM area)
 
 ### How to think about it
 
@@ -1481,7 +1481,7 @@ When pairing it with another area (e.g., "outbound and automation"), outbound is
 
 ## Rule 2g: Don't Pack 3+ Concepts Into One Phrase (v0.22)
 
-Field-tested correction noted on a Plaid draft: "I build outbound systems for API-first SaaS that turn developer adoption into enterprise pipeline. I've done this with 122+ companies."
+Field-tested correction noted on a Plaid draft: "I build outbound systems for API-first SaaS that turn developer adoption into enterprise pipeline. I've done this with [N]+ companies."
 
 The Plaid draft crammed THREE distinct concepts into one phrase ("API-first SaaS", "developer adoption", "enterprise pipeline") plus a proof point in the same paragraph. Too dense. Reader's brain stalls.
 
@@ -1497,9 +1497,9 @@ A single sentence should carry MAX 2 distinct concepts about your work. If you h
 Concepts crammed: (1) API-first SaaS as the target, (2) developer adoption as the input, (3) enterprise pipeline as the output. Three distinct ideas in one sentence.
 
 ✅ Cleaner (2 concepts max per sentence):
-> "I build the outbound layer for API-first SaaS, and I've done this with 122+ companies."
+> "I build the outbound layer for API-first SaaS, and I've done this with [N]+ companies."
 
-Concepts: (1) outbound layer for API-first SaaS as the offer, (2) 122+ companies as proof. Two clean ideas.
+Concepts: (1) outbound layer for API-first SaaS as the offer, (2) [N]+ companies as proof. Two clean ideas.
 
 ### Self-check
 
@@ -1680,9 +1680,9 @@ The templates below are the highest-performing reference emails. They are the ba
 ```
 Good {{sl_time_of_day}} {{first_name}},
 
-Are you looking for a contract based {go to market engineer/clay expert/n8n expert|clay expert/go to market engineer/n8n expert} from India?
+Are you looking for a contract based {your role labels|your role labels (rotated)} [from your location, optional]?
 
-I've worked with {122+ clients|over 122 clients} and {was keen on seeing|would love to see} how i could help {{company_name}} : )
+I've worked with {[N]+ clients|over [N] clients} and {was keen on seeing|would love to see} how i could help {{company_name}} : )
 
 {Would a meeting work this week?|Would a meeting work this week??}
 
@@ -1693,9 +1693,9 @@ I've worked with {122+ clients|over 122 clients} and {was keen on seeing|would l
 
 - **Opens with time-of-day personalization.** Signals "not mass".
 - **Leads with a direct question about THEM** ("Are you looking for..."). Not about the sender.
-- **Positioning in the first sentence.** Contract-based, three roles, from India. Clear in one line.
+- **Positioning in the first sentence.** Contract-based, three roles, [from your location, optional]. Clear in one line.
 - **The slash-separated role list with spintax reorder.** Both variants keep all three skills visible, but the first role shown rotates. Same meaning, different hash, different reader impression.
-- **Social proof in a single phrase** ("122+ clients"). No company names, no case study bragging. One number, understated.
+- **Social proof in a single phrase** ("[N]+ clients"). No company names, no case study bragging. One number, understated.
 - **Soft curiosity close** ("would love to see how I could help {{company_name}}"). Makes it about the prospect's company, not your pitch.
 - **One emoji** (": )") used sparingly to de-formalize.
 - **CTA is a direct meeting ask.** No link, no Calendly, no "grab time here". Just a question requiring a yes/no.
@@ -1870,9 +1870,9 @@ State "all combos clean" once you've verified every spintax combination renders 
 
 - [ ] Line 1 is exactly `Good {{sl_time_of_day}} {{first_name}},` (or an approved minor spintax variant; NEVER "Hope you're...", "Wishing you...", "Having a good...").
 - [ ] Line 2 is 1-2 sentences of real, observed personalization about the prospect or company. Not generic.
-- [ ] Line 3 begins with "Are you looking for a go to market engineer by any chance?" (default). Multi-role slashed spintax is OPTIONAL not default.
+- [ ] Line 3 begins with "Are you looking for a [your role] by any chance?" (default). Multi-role slashed spintax is OPTIONAL not default.
 - [ ] Line 3 includes sender identity + social proof number.
-- [ ] No specific tool names in the body (Clay, n8n, Smartlead, etc.). "Go to market engineer" is the positioning word.
+- [ ] No specific tool names in the body (Clay, n8n, Smartlead, etc.). "[Your role]" is the positioning word.
 - [ ] Line 2 uses ONE observation only. Not a stack of three.
 - [ ] No CTA words (meeting, work, week) appear anywhere in the body. Only in the locked CTA line.
 - [ ] Line 2 is ONE observation. No forced "[category] usually needs outbound that [vague jargon]" follow-up sentence (v0.20 rule).
@@ -1902,11 +1902,11 @@ State "all combos clean" once you've verified every spintax combination renders 
 - [ ] First name and company name values have been normalized (or input was already pre-normalized upstream).
 - [ ] Target research performed: visited domain, classified persona (1 Agency or 2 End-Company), noted 1-2 specific details for Line 2.
 - [ ] No confidential client name from the roster appears anywhere in the output.
-- [ ] If the copy references your brand, it says "Up" (never "Up One"). If it references the website URL, it says "up.one".
+- [ ] Brand name in the copy uses the exact casing from your sender profile (e.g., always "Acme", never "ACME" or "acme"). The website URL is only used in URL contexts (signature, fully-qualified link), never as the brand name in body prose.
 - [ ] Total word count 30 to 70, target 40 to 55.
 - [ ] No single sentence exceeds 20 words.
 - [ ] If multiple variants, word counts are varied, not clustered.
-- [ ] Positioning matches your sender identity (GTM engineer, Clay + self-hosted n8n, from India, contract, 122+ clients).
+- [ ] Positioning matches your sender identity (your role, your core tools or domain expertise, your engagement model, your social proof number).
 - [ ] If this is a step 1 email, ZERO links in the body (signature is out of scope).
 - [ ] Any resource mentioned (case study, video, breakdown) is offered via reply, not linked.
 
@@ -1914,7 +1914,7 @@ State "all combos clean" once you've verified every spintax combination renders 
 
 - [ ] If Template #2 style is used: `{{Case Study Company Name}}`, `{{Lookalike 1}}`, `{{Lookalike 2}}` are populated from the Enrichment Pipeline and are not placeholder/fabricated/generic.
 - [ ] If Stage 1 of the pipeline returned "None found" for this prospect, Template #2 was NOT used.
-- [ ] If Template #2 is used, the forwarded block uses "Ashley Johnson" exactly (never a substituted name).
+- [ ] If Template #2 is used, the forwarded block uses the chosen co-founder persona name (a fixed, fictional first+last name pair) consistently. Never rotate it across sends.
 
 **Sync:**
 
